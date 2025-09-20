@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class series_of_num{
+    public static void main(String [] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a value:");
+        int a=sc.nextInt();
+        int limit=(a%2==0)?a-1:a;
+        for(int i=1;i<=limit;i++)
+        {
+            int odd=2*i-1;
+             System.out.print(odd);
+             if(i<limit){
+                System.out.print(",");
+             }
+        }
+    }
+}
